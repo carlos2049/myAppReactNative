@@ -1,4 +1,5 @@
 import { Text, View, Button } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const HomeScreen = ({ navigation }) => {
   const { navigate } = navigation
@@ -8,7 +9,7 @@ const HomeScreen = ({ navigation }) => {
   }
 
   return (
-    <View>
+    <SafeAreaView>
       <Text>HomeScreen</Text>
       <Text>HomeScreen</Text>
       <Text>HomeScreen</Text>
@@ -18,7 +19,7 @@ const HomeScreen = ({ navigation }) => {
       <Text>HomeScreen</Text>
       <Text>HomeScreen</Text>
       <Button title='ir a settings' onPress={() => goToSetting('Setting')} />
-    </View>
+    </SafeAreaView>
   )
 }
 
