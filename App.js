@@ -1,15 +1,18 @@
 // import { StatusBar } from 'expo-status-bar';
 import 'react-native-gesture-handler';
-import { StyleSheet, Text, View } from 'react-native';
-import Saludar from './src/components/Saludar';
+import { NavigationContainer } from '@react-navigation/native';
+import { StyleSheet } from 'react-native';
+import NavigationStack from './src/navigation/NavigationStack';
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>curso react native</Text>
-      <Saludar firstname='jose' lastname='benavides' />
-    </View>
+    <NavigationContainer>
+      <NavigationStack />
+    </NavigationContainer>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
